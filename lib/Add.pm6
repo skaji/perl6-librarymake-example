@@ -6,7 +6,7 @@ unit module Add;
 
 sub library {
     my $so = get-vars('')<SO>;
-    my $libname = "lib/Add/libadd$so";
+    my $libname = "Add/libadd$so";
     for @*INC <-> $inc {
         if $inc ~~ Str {
             $inc ~~ s/^.*\#//;
