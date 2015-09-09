@@ -15,6 +15,12 @@ INSTALL
 
     panda install git://github.com/shoichikaji/perl6-librarymake-example.git
 
+Note: If you see `/usr/bin/ld: cannot find -lpam` error, then you will need
+
+    sudo apt-get install libpam0g-dev
+
+or something similar.
+
 DESCRIPTION
 ===========
 
