@@ -34,12 +34,6 @@ Add - minimal example of LibraryMake
 
   panda install git://github.com/shoichikaji/perl6-librarymake-example.git
 
-Note: If you see C</usr/bin/ld: cannot find -lpam> error, then you will need
-
-  sudo apt-get install libpam0g-dev
-
-or something similar.
-
 =head1 DESCRIPTION
 
 Add module shows you a minimal example of L<https://github.com/retupmoca/P6-LibraryMake>.
