@@ -1,7 +1,7 @@
 all: %DESTDIR%/libadd%SO%
 
-%DESTDIR%/libadd%SO%: libadd%O%
-	    %LD% %LDSHARED% %LDFLAGS% %LIBS% %LDOUT%%DESTDIR%/libadd%SO% libadd%O%
+%DESTDIR%/libadd%SO%: add%O%
+	    %LD% %LDSHARED% %LDFLAGS% %LIBS% %LDOUT%%DESTDIR%/libadd%SO% add%O%
 
-libadd%O%: add.c
-	    %CC% -c %CCSHARED% %CCFLAGS% %CCOUT%libadd%O% add.c
+add%O%: add.c
+	    %CC% -c %CCSHARED% %CCFLAGS% %CCOUT% add%O% add.c
