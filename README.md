@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/shoichikaji/perl6-librarymake-example.svg?branch=master)](https://travis-ci.org/shoichikaji/perl6-librarymake-example)
+
 NAME
 ====
 
