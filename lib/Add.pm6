@@ -7,7 +7,7 @@ unit module Add;
 sub library {
     my $so = get-vars('')<SO>;
     my $libname = "Add/libadd$so";
-    for @*INC <-> $inc {
+    for @*INC -> $inc is copy {
         if $inc ~~ Str {
             $inc ~~ s/^.*\#//;
             return "$inc/$libname" if "$inc/$libname".IO.r;
