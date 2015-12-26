@@ -1,0 +1,21 @@
+{
+  "name" : "Add",
+  "source-url" : "git://github.com/shoichikaji/perl6-librarymake-example.git",
+  "perl" : "v6",
+  "resources" : [
+    "libadd.dylib"
+  ],
+  "build-depends" : [ ],
+  "provides" : {
+    "Add" : "lib/Add.pm6"
+  },
+  "depends" : [
+    "LibraryMake"
+  ],
+  "description" : "minimal example of LibraryMake",
+  "test-depends" : [ ],
+  "version" : "*",
+  "authors" : [
+    "Shoichi Kaji"
+  ]
+}

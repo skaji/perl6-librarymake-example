@@ -6,14 +6,7 @@ unit module Add;
 
 sub library {
     my $so = get-vars('')<SO>;
-    my $libname = "Add/libadd$so";
-    for @*INC -> $inc is copy {
-        if $inc ~~ Str {
-            $inc ~~ s/^.*\#//;
-            return "$inc/$libname" if "$inc/$libname".IO.r;
-        }
-    }
-    die "Unable to find library: $libname";
+    return ~%?RESOURCES{"libadd$so"};
 }
 
 sub add(Int:D, Int:D) returns Int is native(&library) is export { * };
