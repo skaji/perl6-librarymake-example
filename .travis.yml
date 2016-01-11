@@ -7,4 +7,5 @@ install:
 script:
   - perl6 -MPanda::Builder -e 'Panda::Builder.build(~$*CWD)'
   - PERL6LIB=$PWD/lib prove -e perl6 -vr t/
+  - panda install git://github.com/shoichikaji/perl6-librarymake-example.git
 sudo: false
