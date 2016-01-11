@@ -6,10 +6,10 @@ unit module Add;
 
 sub library {
     my $so = get-vars('')<SO>;
-    return ~%?RESOURCES{"libadd$so"};
+    return ~%?RESOURCES{"lib/libadd$so"};
 }
 
-sub add(Int:D, Int:D) returns Int is native(&library) is export { * };
+sub add(int32:D, int32:D) returns int32 is native(&library) is export { * };
 
 =begin pod
 
