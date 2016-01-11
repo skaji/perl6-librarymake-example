@@ -3,7 +3,9 @@
   "source-url" : "git://github.com/shoichikaji/perl6-librarymake-example.git",
   "perl" : "6.c",
   "resources" : [
-    "libadd.dylib"
+    "lib/libadd.dylib",
+    "lib/libadd.dll",
+    "lib/libadd.so"
   ],
   "build-depends" : [ ],
   "provides" : {
