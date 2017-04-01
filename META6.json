@@ -12,7 +12,7 @@
     "Add" : "lib/Add.pm6"
   },
   "depends" : [
-    "LibraryMake"
+    "LibraryMake", "Shell::Command"
   ],
   "description" : "minimal example of LibraryMake",
   "test-depends" : [ ],
