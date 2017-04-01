@@ -1,9 +1,8 @@
 use v6;
-use Panda::Builder;
 use LibraryMake;
 use Shell::Command;
 
-class Build is Panda::Builder {
+class Build {
     method build($workdir) {
         my $dest = "$workdir/resources/lib";
         mkpath $dest unless $dest.IO.d;
